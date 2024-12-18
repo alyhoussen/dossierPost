@@ -1,7 +1,23 @@
+import Post from "./Post/Post"
+import { useSelector } from 'react-redux'
 
-function Posts() {
+
+
+function Posts({setShowComments, setSelectedPost}) {
+  const posts = useSelector((state) => state.posts);
+  
+  console.log(posts)
+
   return (
-    <div>Posts</div>
+    <div>
+      <h1 className="text-[28px] font-semibold mb-4">POSTS</h1>
+      <div className="flex flex-wrap gap-5 justify-center mb-5">
+        {posts.map((post, index)=> <Post setShowComments={setShowComments} setSelectedPost={setSelectedPost}  key={index} 
+        post={post}
+/>)}
+      {posts.length<=0 && <p className="text-[26px]">No memories yet!!</p>}
+      </div>
+    </div>
   )
 }
 

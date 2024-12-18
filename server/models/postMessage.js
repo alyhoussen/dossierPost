@@ -10,6 +10,10 @@ const postSchema = mongoose.Schema({
         type: Number,
         default: 0,
     },
+    comments: [{
+        writer: String,
+        comment: String
+    }],
     createdAt:{
         type: Date,
         default: new Date()
