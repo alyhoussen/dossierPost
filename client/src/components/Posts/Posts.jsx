@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 function Posts({setShowComments, setSelectedPost}) {
   const posts = useSelector((state) => state.posts);
   
-  console.log(posts)
+  console.log(useSelector((state)=> state))
 
   return (
     <div>

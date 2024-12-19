@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const url = 'http://localhost:5000/posts';
+const url = import.meta.env.VITE_URL;
+console.log ("The url is "+url) 
 
 export const FetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost)

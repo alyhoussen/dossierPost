@@ -31,17 +31,15 @@ function App() {
       }
       {!showComments &&
         <Container maxWidth="lg">
-          <AppBar color="inherit" position="static" className="rounded-lg my-[30px] p-2" >
+          <div className="rounded-lg my-[30px] p-2 shadow" >
             <div className="flex flex-row flex-wrap justify-center items-center " >
-              <Typography variant="h3" align="center" className="text-blue-400"> 
-                Dôssié
-              </Typography>
+              <h1 className="text-[38px] text-violet-500 font-semibold">Dossiers</h1>
               <div className="flex gap-3">
                 <span className="text-[40px]">&#128518;</span>
                 <img src={memories} alt="memories" className="h-[60px] ml-3 text-violet-600"/>
               </div>
             </div>
-          </AppBar>
+          </div>
           <Grow in className=" ">
             <Container>
               <Grid container justify="space-between" alignItems="stretch">
