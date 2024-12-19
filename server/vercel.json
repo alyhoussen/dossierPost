@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ],
+    "env": {
+      "PORT": "3000",
+      "DATABASE_URL": "mongodb+srv://oussenalyjoma:1234@cluster0.9kvro.mongodb.net/mern?retryWrites=true&w=majority&appName=Cluster0",
+      "API_KEY": "your-api-key"
+    },
+    "functions": {
+      "index.js": {
+        "memory": 512,
+        "maxDuration": 10
+      }
+    }
+  }
+  

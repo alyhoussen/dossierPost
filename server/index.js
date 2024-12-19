@@ -15,7 +15,7 @@ app.use(bodyParsrer.urlencoded({ limit: "30mb", extended: true }));
 app.use('/posts', postRoutes)
 
 
-const CONNEXION_URL = process.env.CONNEXION_URL_CLUSTER;
+const CONNEXION_URL = process.env.DATABASE_URL;
 const PORT = process.env.PORT || 5000;
 console.log(CONNEXION_URL)
 mongoose.connect(CONNEXION_URL)
