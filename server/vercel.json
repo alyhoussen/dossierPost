@@ -16,12 +16,6 @@
       "PORT": "3000",
       "DATABASE_URL": "mongodb+srv://oussenalyjoma:1234@cluster0.9kvro.mongodb.net/mern?retryWrites=true&w=majority&appName=Cluster0",
       "API_KEY": "your-api-key"
-    },
-    "functions": {
-      "index.js": {
-        "memory": 512,
-        "maxDuration": 10
-      }
     }
   }
   
