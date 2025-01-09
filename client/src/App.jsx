@@ -33,7 +33,7 @@ function App() {
         <Container maxWidth="lg">
           <div className="rounded-lg my-[30px] p-2 shadow" >
             <div className="flex flex-row flex-wrap justify-center items-center " >
-              <h1 className="text-[38px] text-violet-500 font-semibold">Dossiers</h1>
+              <h1 className="text-[38px] text-violet-500 font-semibold">Dossier</h1>
               <div className="flex gap-3">
                 <span className="text-[40px]">&#128518;</span>
                 <img src={memories} alt="memories" className="h-[60px] ml-3 text-violet-600"/>

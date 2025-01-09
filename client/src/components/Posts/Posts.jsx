@@ -15,7 +15,7 @@ function Posts({setShowComments, setSelectedPost}) {
         {posts.map((post, index)=> <Post setShowComments={setShowComments} setSelectedPost={setSelectedPost}  key={index} 
         post={post}
 />)}
-      {posts.length<=0 && <p className="text-[26px]">No memories yet!!</p>}
+      {posts.length<=0 && <p className="text-[26px]">No posts yet!!</p>}
       </div>
     </div>
   )
