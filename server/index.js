@@ -11,8 +11,8 @@ const app = express();
 const corsOptions = { origin: 'https://dossier-post.netlify.app', optionsSuccessStatus: 200 };
 
 app.use(cors());
-app.use(bodyParsrer.json({ limit: "30mb", extended: true }));
-app.use(bodyParsrer.urlencoded({ limit: "30mb", extended: true }));
+app.use(bodyParser.json({ limit: "30mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
 app.use('/posts', postRoutes)
 
