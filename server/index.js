@@ -8,9 +8,9 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const app = express();
-const corsOptions = { origin: 'https://dossier-post.netlify.app', optionsSuccessStatus: 200 };
+const corsOptions = { origin: 'https://dossier-post.netlify.app/', optionsSuccessStatus: 200 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
