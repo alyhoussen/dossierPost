@@ -1,5 +1,5 @@
 import express from "express";
-import bodyParsrer from "body-parser";
+import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import postRoutes from './routes/posts.js'
@@ -10,7 +10,7 @@ dotenv.config()
 const app = express();
 const corsOptions = { origin: 'https://dossier-post.netlify.app', optionsSuccessStatus: 200 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParsrer.json({ limit: "30mb", extended: true }));
 app.use(bodyParsrer.urlencoded({ limit: "30mb", extended: true }));
 
